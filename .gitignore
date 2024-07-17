@@ -1,0 +1,10 @@
+node_modules/
+.idea
+
+stylelintrc.json
+gulpfile.js
+.bowerrc
+package.json
+package-lock.json
+
+.gitignor

@@ -1,0 +1,107 @@
+//@import "bourbon"
+
+/*==========	Desktop First Method	==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.futher-recommendations
+		&.hide-tablet
+			display: none
+
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.updates-panel
+		&.hide-tablet
+			display: none
+	/*Disable Animation on Mobile Devices*/
+	.animated
+		/*CSS transitions*/
+		-o-transition-property: none !important
+		-moz-transition-property: none !important
+		-ms-transition-property: none !important
+		-webkit-transition-property: none !important
+		transition-property: none !important
+		/*CSS transforms*/
+		-o-transform: none !important
+		-moz-transform: none !important
+		-ms-transform: none !important
+		-webkit-transform: none !important
+		transform: none !important
+		/*CSS animations*/
+		-webkit-animation: none !important
+		-moz-animation: none !important
+		-o-animation: none !important
+		-ms-animation: none !important
+		animation: none !important
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+/*==========	Mobile First Method	==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	.updates-panel
+		margin-bottom: 0
+		margin-right: 16px
+		&.hide-desktop
+			display: none
+	.info-panel
+		align-items: center
+		margin-bottom: 26px
+		&__block-item
+			margin-bottom: 0
+	/**/
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	.futher-recommendations
+		&.hide-desktop
+			display: none
+		&__title
+			font-size: 14px
+			line-height: 18px
+			margin-bottom: 12px
+	.futher-item
+		flex-direction: column
+		margin-bottom: 24px
+		&__image
+			width: initial
+			margin-right: 0
+			margin-bottom: 8px
+		&__title
+			margin-bottom: 8px
+		&__description
+			display: none
+
+	// .order-block
+	// 	&__main
+	// 		order: 1
+	// 	&__information
+	// 		order: 3
+	// 	&__list
+	// 		order: 2
+	/**/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
